@@ -7,6 +7,7 @@ System for scheduling the pickup of an order
 ## Table of Content
 
 * [Development Environment Configuration](#development-environment-configuration)
+* [Run development version with docker](#run-development-version-with-docker)
 * [Built With](#built-with)
 * [Authors](#authors)
 
@@ -154,6 +155,36 @@ Execute the following command from another terminal:
 
 ```bash
 curl -H 'Accept: application/json; indent=4' -u `user`:`password` http://127.0.0.1:8000/
+```
+
+________________________________________________________________________________
+## Run development version with docker
+
+Before proceeding, validate that you have Docker installed. Run the following 
+command:
+
+```bash
+sudo docker run hello-world
+```
+
+Run the following command to initialize the project using docker:
+
+Note: The project needs environment variables that are declared in the 
+`.env` file, complete all variables that do not have any value assigned, 
+this is necessary for the command below to work.
+
+```bash
+docker-compose up --remove-orphans
+```
+
+At this point the application is running on port 8080 on your Docker host. Go 
+to `http://localhost:8080` in a web browser.
+
+You can stop the containers and also delete everything that was 
+created at initialization by executing the following command:
+
+```bash
+docker-compose down --rmi all && sudo rm -rf data/
 ```
 
 ________________________________________________________________________________
