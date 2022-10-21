@@ -145,4 +145,4 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________
 ## Authors
-- **Julián Sandoval [derhks]** https://www.linkedin.com/in/sandoval-julian/
+- **Julián Sandoval [derhks](https://www.linkedin.com/in/sandoval-julian/)**
