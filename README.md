@@ -77,8 +77,15 @@ used in the project
 pip3 install --upgrade pip && pip3 install -r requirements.txt
 ```
 
-We must export the environment variables we need in our project. execute the 
-following command:
+We must export the environment variables we need in our project. Create the 
+.env file by executing the following command:
+
+```bash
+mv pickupyou/.example pickupyou/.env
+```
+
+Fill in the environment variables with their corresponding value. Finally, 
+execute the following command:
 
 ```bash
 export $(cat pickupyou/.env | grep -v ^# | xargs)
