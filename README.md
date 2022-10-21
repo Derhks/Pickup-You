@@ -39,7 +39,7 @@ git clone https://github.com/Derhks/Pickup-You.git
 Enter the project folder
 
 ```bash
-cd pickupyou/
+cd Pickup-You/
 ```
 
 ### Create a virtual environment with Pyenv
