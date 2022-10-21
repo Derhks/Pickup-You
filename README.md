@@ -142,10 +142,17 @@ And run the command again.
 Let's verify that the project works, run the following command:
 
 ```bash
-python3 manage.py runserver 8080
+python3 manage.py runserver 8000
 ```
 
-With the above command the server will operate on port 8080.
+With the above command the server will operate on port 8000.
+
+Validate from the command terminal that the server is working correctly. 
+Execute the following command from another terminal:
+
+```bash
+curl -H 'Accept: application/json; indent=4' -u `user`:`password` http://127.0.0.1:8000/
+```
 
 ________________________________________________________________________________
 ## Built With
