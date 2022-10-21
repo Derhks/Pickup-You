@@ -44,6 +44,14 @@ cd Pickup-You/
 
 ### Create a virtual environment with Pyenv
 
+Install the version of `Python` to be used by the virtual environment:
+
+```bash
+pyenv install -v 3.9.13
+```
+
+Create the `pickupyou` virtual environment
+
 ```bash
 pyenv virtualenv 3.9.13 pickupyou
 ```
@@ -60,7 +68,9 @@ To deactivate an active environment, use:
 pyenv deactivate
 ```
 
-With the virtual environment activated we are going to install the requirements 
+### Install project dependencies
+
+With the virtual environment activated we are going to install the dependencies 
 used in the project
 
 ```bash
