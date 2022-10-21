@@ -1,6 +1,8 @@
 # Agenda
 
-System for scheduling the pickup of an order 
+System for scheduling the pickup of an order
+
+[![codecov](https://codecov.io/gh/Derhks/Pickup-You/branch/main/graph/badge.svg?token=QvK8AQvUKE)](https://codecov.io/gh/Derhks/Pickup-You)
 
 ## Table of Content
 
