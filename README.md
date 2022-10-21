@@ -130,12 +130,6 @@ running the server:
 python3 manage.py test
 ```
 
-or
-
-```bash
-sudo python3 manage.py test
-```
-
 Note: if running the above command fails some tests, remove the environment 
 variable by executing the command 
 
