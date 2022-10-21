@@ -33,7 +33,7 @@ If you do not see the `Git` or `Pyenv` version, you must install it.
 ### Downloading the app
 
 ```bash
-git clone git@github.com:Derhks/Pickup-You.git
+git clone https://github.com/Derhks/Pickup-You.git
 ```
 
 Enter the project folder
