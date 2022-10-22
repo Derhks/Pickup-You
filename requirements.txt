@@ -6,6 +6,7 @@ coverage==6.5.0
 decorator==5.1.1
 Django==4.1.2
 djangorestframework==3.14.0
+drf_yasg==1.21.4
 executing==1.1.1
 ipython==8.5.0
 jedi==0.18.1
