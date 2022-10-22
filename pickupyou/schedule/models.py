@@ -9,7 +9,8 @@ class Driver(models.Model):
     last_name = models.CharField(max_length=50)
 
     class Meta:
-        verbose_name = _('Conductor')
+        verbose_name = _("Conductor")
+        verbose_name_plural = _("Conductores")
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
@@ -20,7 +21,8 @@ class Coordinates(models.Model):
     longitude = models.CharField(max_length=9, verbose_name="Longitud")
 
     class Meta:
-        verbose_name = _('Coordenadas')
+        verbose_name = _("Coordenadas")
+        verbose_name_plural = _("Coordenadas")
 
     def __str__(self):
         return f"({self.latitude}, {self.longitude})"
@@ -48,7 +50,8 @@ class Order(models.Model):
         verbose_name="Lugar de Destino")
 
     class Meta:
-        verbose_name = _('Pedido')
+        verbose_name = _("Pedido")
+        verbose_name_plural = _("Pedidos")
 
     def __str__(self):
         return f"{self.title}"
