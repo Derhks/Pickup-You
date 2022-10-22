@@ -27,7 +27,7 @@ from pickupyou.schedule.views import (
 
 schema_view = swagger_get_schema_view(
     openapi.Info(
-        title="Agenda API",
+        title="Schedule API",
         default_version='1.0.0',
         description="API documentation of Pick-up You",
     ),
