@@ -179,7 +179,7 @@ docker-compose up --remove-orphans
 ```
 
 At this point the application is running on port 8080 on your Docker host. Go 
-to `http://localhost:8080` in a web browser.
+to `http://localhost:8080/swagger/` in a web browser.
 
 You can stop the containers and also delete everything that was 
 created at initialization by executing the following command:
@@ -194,7 +194,7 @@ ________________________________________________________________________________
 Now go to http://127.0.0.1:8000/swagger/.
 
 You will see the automatic interactive API documentation 
-(provided by Swagger UI):
+(provided by Swagger UI)
 
 ________________________________________________________________________________
 ## Built With
