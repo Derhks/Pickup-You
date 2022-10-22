@@ -1,4 +1,4 @@
-# Agenda
+# Schedule
 
 System for scheduling the pickup of an order
 
