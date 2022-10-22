@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 
+import django_heroku
 from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 
@@ -146,3 +147,8 @@ REST_FRAMEWORK = {
 }
 
 URL_DRIVERS_LOCATIONS = os.getenv('URL_DRIVERS_LOCATIONS')
+
+
+# Activate Django-Heroku
+
+django_heroku.settings(locals())
