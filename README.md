@@ -8,6 +8,7 @@ System for scheduling the pickup of an order
 
 * [Development Environment Configuration](#development-environment-configuration)
 * [Run development version with docker](#run-development-version-with-docker)
+* [Interactive API docs](#interactive-api-docs)
 * [Built With](#built-with)
 * [Authors](#authors)
 
@@ -186,6 +187,14 @@ created at initialization by executing the following command:
 ```bash
 docker-compose down --rmi all && sudo rm -rf data/
 ```
+
+________________________________________________________________________________
+## Interactive API docs
+
+Now go to http://127.0.0.1:8000/swagger/.
+
+You will see the automatic interactive API documentation 
+(provided by Swagger UI):
 
 ________________________________________________________________________________
 ## Built With
