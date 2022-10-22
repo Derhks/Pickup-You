@@ -1,1 +1,1 @@
-web: gunicorn e_commerce.wsgi
+web: gunicorn pickupyou.wsgi
