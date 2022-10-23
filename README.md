@@ -191,7 +191,7 @@ docker-compose down --rmi all && sudo rm -rf data/
 ________________________________________________________________________________
 ## Interactive API docs
 
-Now go to http://127.0.0.1:8000/swagger/.
+Now go to `http://127.0.0.1:8000/swagger/`.
 
 You will see the automatic interactive API documentation 
 (provided by Swagger UI)
