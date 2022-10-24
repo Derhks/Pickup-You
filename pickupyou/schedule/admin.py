@@ -4,8 +4,15 @@ from pickupyou.schedule.models import Coordinates, Driver, Order
 
 
 class OrderAdmin(admin.ModelAdmin):
+    fields = (
+        "title",
+        ("day", "start_time"),
+        "driver",
+        ("pickup_point", "destination_point")
+    )
     list_filter = ("start_time", "day")
     ordering = ["day"]
+    exclude = ("end_time",)
 
 
 class DriverAdmin(admin.ModelAdmin):
