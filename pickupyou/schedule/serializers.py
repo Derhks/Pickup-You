@@ -30,4 +30,4 @@ class DriverSerializer(serializers.HyperlinkedModelSerializer):
 class CoordinatesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Coordinates
-        fields = ["latitude", "longitude"]
+        fields = ["latitude", "longitude", "url"]
