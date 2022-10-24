@@ -32,6 +32,7 @@ class Order(models.Model):
     title = models.CharField(max_length=150, verbose_name="Titulo")
     day = models.DateField(verbose_name="Día")
     start_time = models.TimeField(verbose_name="Hora de Inicio")
+    end_time = models.TimeField(verbose_name="Hora de Finalización")
     driver = models.ForeignKey(
         Driver,
         related_name="orders",
@@ -62,8 +63,6 @@ class Order(models.Model):
         order_duration = datetime.timedelta(hours=1)
 
         return (tmp_datetime + order_duration).time()
-
-    end_time = models.TimeField(verbose_name="Hora de Finalización")
 
     def save(self, *args, **kwargs):
         if not self.end_time:
