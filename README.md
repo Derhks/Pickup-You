@@ -6,7 +6,7 @@ System for scheduling the pickup of an order
 
 ## Table of Content
 
-* [Development Environment Configuration](#development-environment-configuration)
+* [Development Environment Configuration](#development-environment-configuration-ubuntu-2004)
   * [Prerequisites](#prerequisites)
   * [Downloading the app](#downloading-the-app)
   * [Create a virtual environment with Pyenv](#create-a-virtual-environment-with-pyenv)
