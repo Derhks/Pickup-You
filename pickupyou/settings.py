@@ -151,4 +151,7 @@ URL_DRIVERS_LOCATIONS = os.getenv('URL_DRIVERS_LOCATIONS')
 
 # Activate Django-Heroku
 
-django_heroku.settings(locals())
+HEROKU = eval(os.getenv('HEROKU'))
+
+if HEROKU:
+    django_heroku.settings(locals())

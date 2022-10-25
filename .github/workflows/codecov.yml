@@ -22,6 +22,7 @@ jobs:
     - name: Generate Report
       env:
         URL_DRIVERS_LOCATIONS: ${{ secrets.URL_DRIVERS_LOCATIONS }}
+        HEROKU: ${{ secrets.HEROKU }}
       run: |
         coverage run manage.py test
     - name: Upload Coverage to Codecov
