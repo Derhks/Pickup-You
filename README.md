@@ -7,6 +7,12 @@ System for scheduling the pickup of an order
 ## Table of Content
 
 * [Development Environment Configuration](#development-environment-configuration)
+  * [Prerequisites](#prerequisites)
+  * [Downloading the app](#downloading-the-app)
+  * [Create a virtual environment with Pyenv](#create-a-virtual-environment-with-pyenv)
+  * [Setup SQLite](#setup-sqlite)
+  * [Create superuser](#create-superuser)
+  * [Run server](#run-server)
 * [Run development version with docker](#run-development-version-with-docker)
 * [Endpoints](#endpoints)
   * [Interactive API docs](#interactive-api-docs)
