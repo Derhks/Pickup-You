@@ -293,6 +293,7 @@ API endpoint that allows you to create an order.
 curl --location --request POST 'http://127.0.0.1:8000/orders/' \
 --header 'Content-Type: application/json' \
 --header 'accept: application/json' \
+--header 'Authorization: Basic Auth' \
 --data-raw '{
   "title": "string",
   "day": "YYYY-MM-DD",
