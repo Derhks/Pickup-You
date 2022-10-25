@@ -225,6 +225,31 @@ curl --location --request POST 'http://127.0.0.1:8000/coordinates/' \
 }'
 ```
 
+`GET /drivers/`
+
+API endpoint to view all drivers.
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/drivers/' \
+--header 'accept: application/json' \
+--header 'Authorization: Basic Auth'
+```
+
+`POST /drivers/`
+
+API endpoint to create a driver.
+
+```bash
+curl --location --request POST 'http://127.0.0.1:8000/drivers/' \
+--header 'accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic Auth' \
+--data-raw '{
+  "first_name": "string",
+  "last_name": "string"
+}'
+```
+
 `GET /drivers/{id}/orders/{day}/`
 
 API endpoint that allows to view the orders assigned to the driver on the 
