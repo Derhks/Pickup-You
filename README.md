@@ -267,6 +267,16 @@ API endpoint that allows you to see the nearest driver.
 curl --location --request GET 'http://127.0.0.1:8000/nearest-driver/?latitude=1&longitude=7&day=2021-12-10&hour=00:00:00'
 ```
 
+`GET /orders/`
+
+API endpoint to view all orders
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/orders/' \
+--header 'accept: application/json' \
+--header 'Authorization: Basic Auth'
+```
+
 `GET /orders/{day}`
 
 API endpoint that allows you to view the orders assigned on the specified day.
@@ -281,10 +291,11 @@ API endpoint that allows you to create an order.
 
 ```bash
 curl --location --request POST 'http://127.0.0.1:8000/orders/' \
---header 'Content-Type: text/plain' \
+--header 'Content-Type: application/json' \
+--header 'accept: application/json' \
 --data-raw '{
   "title": "string",
-  "day": "2022-10-25",
+  "day": "YYYY-MM-DD",
   "start_time": "string",
   "driver": "string",
   "pickup_point": "string",
