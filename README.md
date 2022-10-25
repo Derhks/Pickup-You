@@ -237,7 +237,7 @@ curl --location --request GET 'http://127.0.0.1:8000/drivers/' \
 
 `POST /drivers/`
 
-API endpoint to create a driver.
+API endpoint that allows you to create a driver.
 
 ```bash
 curl --location --request POST 'http://127.0.0.1:8000/drivers/' \
