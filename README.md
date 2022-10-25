@@ -189,20 +189,54 @@ docker-compose down --rmi all && sudo rm -rf data/
 ```
 
 ________________________________________________________________________________
-## Interactive API docs
+## Endpoints
+
+### Interactive API docs
 
 Now go to `http://127.0.0.1:8000/swagger/`.
 
 You will see the automatic interactive API documentation 
 (provided by Swagger UI)
 
-### Endpoints
+### Postman
+
+`GET /coordinates/`
+
+API endpoint to view all coordinates.
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/coordinates/' \
+--header 'accept: application/json' \
+--header 'Authorization: Basic Auth'
+```
+
+`POST /coordinates/`
+
+API endpoint to create coordinates.
+
+```bash
+curl --location --request POST 'http://127.0.0.1:8000/coordinates/' \
+--header 'accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic Auth' \
+--data-raw '{
+  "latitude": "string",
+  "longitude": "string"
+}'
+```
+
+`GET /drivers/{id}/orders/{day}/`
+
+API endpoint that allows to view the orders assigned to the driver on the 
+specified day.
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/drivers/2/orders/2022-10-19/'
+```
 
 `GET /nearest-driver/`
 
 API endpoint that allows you to see the nearest driver.
-
-Example in Postman:
 
 ```bash
 curl --location --request GET 'http://127.0.0.1:8000/nearest-driver/?latitude=1&longitude=7&day=2021-12-10&hour=00:00:00'
@@ -212,28 +246,13 @@ curl --location --request GET 'http://127.0.0.1:8000/nearest-driver/?latitude=1&
 
 API endpoint that allows you to view the orders assigned on the specified day.
 
-Example in Postman:
-
 ```bash
 curl --location --request GET 'http://127.0.0.1:8000/orders/2022-10-19'
-```
-
-`GET /drivers/{id}/orders/{day}/`
-
-API endpoint that allows to view the orders assigned to the driver on the 
-specified day.
-
-Example in Postman:
-
-```bash
-curl --location --request GET 'http://127.0.0.1:8000/drivers/2/orders/2022-10-19/'
 ```
 
 `POST /orders/`
 
 API endpoint that allows you to create an order.
-
-Example in Postman:
 
 ```bash
 curl --location --request POST 'http://127.0.0.1:8000/orders/' \
