@@ -8,7 +8,9 @@ System for scheduling the pickup of an order
 
 * [Development Environment Configuration](#development-environment-configuration)
 * [Run development version with docker](#run-development-version-with-docker)
-* [Interactive API docs](#interactive-api-docs)
+* [Endpoints](#endpoints)
+  * [Interactive API docs](#interactive-api-docs)
+  * [Postman](#postman)
 * [Built With](#built-with)
 * [Authors](#authors)
 
