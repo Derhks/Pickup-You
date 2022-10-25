@@ -15,7 +15,8 @@ class OrderSerializer(serializers.HyperlinkedModelSerializer):
             "end_time",
             "driver",
             "pickup_point",
-            "destination_point"
+            "destination_point",
+            "url"
         ]
 
 

@@ -196,6 +196,58 @@ Now go to `http://127.0.0.1:8000/swagger/`.
 You will see the automatic interactive API documentation 
 (provided by Swagger UI)
 
+### Endpoints
+
+`GET /nearest-driver/`
+
+API endpoint that allows you to see the nearest driver.
+
+Example in Postman:
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/nearest-driver/?latitude=1&longitude=7&day=2021-12-10&hour=00:00:00'
+```
+
+`GET /orders/{day}`
+
+API endpoint that allows you to view the orders assigned on the specified day.
+
+Example in Postman:
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/orders/2022-10-19'
+```
+
+`GET /drivers/{id}/orders/{day}/`
+
+API endpoint that allows to view the orders assigned to the driver on the 
+specified day.
+
+Example in Postman:
+
+```bash
+curl --location --request GET 'http://127.0.0.1:8000/drivers/2/orders/2022-10-19/'
+```
+
+`POST /orders/`
+
+API endpoint that allows you to create an order.
+
+Example in Postman:
+
+```bash
+curl --location --request POST 'http://127.0.0.1:8000/orders/' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+  "title": "string",
+  "day": "2022-10-25",
+  "start_time": "string",
+  "driver": "string",
+  "pickup_point": "string",
+  "destination_point": "string"
+}'
+```
+
 ________________________________________________________________________________
 ## Built With
 
